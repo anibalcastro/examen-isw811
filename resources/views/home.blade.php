@@ -4,6 +4,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @auth
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
+
+                <div class="card-body">
+                        EXAMEN FINAL ISW811 - ANIBAL CASTRO - {{auth()->name;}}
+                </div>
+            </div>
+            @else
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
@@ -13,10 +22,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
                 </div>
             </div>
+            @endauth
         </div>
     </div>
 </div>

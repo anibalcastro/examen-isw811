@@ -19,11 +19,7 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            TIENES QUE <a href="/register">REGISTRARTE</a> o <a href="/login">INICIAR SESION</a>
-                        </div>
-                    @endif
+                    TIENES QUE <a href="/register">REGISTRARTE</a> o <a href="/login">INICIAR SESION</a>
                 </div>
             </div>
             @endauth

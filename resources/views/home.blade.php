@@ -9,7 +9,7 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                        EXAMEN FINAL ISW811 -  {{auth()->user()->name}}
+                        EXAMEN FINAL ISW811 -  {{Auth::user()->name;}}
                         <hr>
                         Anibal Castro Ponce - 208110305
                 </div>
